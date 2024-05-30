@@ -1,0 +1,141 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$link-decoration: none;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+$custom-colors: (
+	"farve": $cyan-400,
+	"bg":#FBF6F2,
+	"box":#D9D3C1,
+	"text" :#251B11,
+	"Gtext":#222C1A,
+	"Gbutton":#5A6D50,
+	"LGbutton":#A0AE95,
+	"Bbutton":#523D2A,
+	"LBbutton":#937E66,
+
+
+);
+
+
+
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrapComponents";
+
+// 5. Du kan lave styling her...
+@font-face {
+	src: url(/Fonts/VLADIMIR.TTF);
+	font-family: Vladimir Script;
+}
+
+h1 {
+	font-size: 89.76px;
+	line-height: 95.4px;
+	font-weight: 700; // Bold
+}
+h2 {
+	font-size: 67.34px;
+	line-height: 87.5px;
+	letter-spacing: 0;
+	font-weight: 700; // Bold
+}
+h3 {
+	font-size: 32px;
+	letter-spacing: 0;
+	font-weight: 500; // Medium
+}
+h4 {
+	font-size: 24px;
+	letter-spacing: 0;
+	font-weight: 500; // Meduim
+}
+h5 {
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 0;
+	font-weight: 600; // SemiBold
+}
+h6 {
+	font-size: 21.33px; 
+	line-height: 32px;
+	letter-spacing: 0;
+	font-weight: 500; // Medium
+}
+p {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0;
+	font-weight: 500; // Medium
+}
+
+small {
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0;
+	font-weight: 400; // Regular
+}
+
+
+
+
+
+
+
+
+
+// når man hover over et dropdown item underliner den teksten og ændrer baggrundsfarven
+body{
+	background-color: #FBF6F2;
+}
+
+
+.dropdown-item{
+	font-family: Playfair Display;
+	color: #251B11;
+}
+.dropdown-item:hover{
+	background-color: #EBE4D0;
+}
+.dropdown-devider{
+	color: #A0AE95;
+
+}
+.nav-link{
+font-family: "Playfair Display";
+color: #251B11;
+
+}
+.card{
+	padding-top: 1.5rem;
+}
+
+.row{
+	margin: 88px;
+}
+.mobilenav{
+	display: flex;
+}
+.desktopnav{
+	display: none;
+}
+@include media-breakpoint-up(lg){
+	.desktopnav{
+		display: flex;
+	}
+	.mobilenav{
+		display: none;
+	}
+}
+
+.nav-link:hover{
+	text-decoration: underline;
+}
+
