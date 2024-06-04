@@ -36,52 +36,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	font-family: Vladimir Script;
 }
 
-h1 {
-	font-size: 89.76px;
-	line-height: 95.4px;
-	font-weight: 700; // Bold
-}
-h2 {
-	font-size: 67.34px;
-	line-height: 87.5px;
-	letter-spacing: 0;
-	font-weight: 700; // Bold
-}
-h3 {
-	font-size: 32px;
-	letter-spacing: 0;
-	font-weight: 500; // Medium
-}
-h4 {
-	font-size: 24px;
-	letter-spacing: 0;
-	font-weight: 500; // Meduim
-}
-h5 {
-	font-size: 24px;
-	line-height: 24px;
-	letter-spacing: 0;
-	font-weight: 600; // SemiBold
-}
-h6 {
-	font-size: 21.33px; 
-	line-height: 32px;
-	letter-spacing: 0;
-	font-weight: 500; // Medium
-}
-p {
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: 0;
-	font-weight: 500; // Medium
-}
-
-small {
-	font-size: 12px;
-	line-height: 18px;
-	letter-spacing: 0;
-	font-weight: 400; // Regular
-}
 
 
 
