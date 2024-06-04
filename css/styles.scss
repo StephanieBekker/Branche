@@ -50,7 +50,7 @@ body{
 	background-color: #FBF6F2;
 }
 
-/* navbar */
+/*-----------------------navbar----------------------- */
 .dropdown-item{
 	font-family: Playfair Display;
 	color: #251B11;
@@ -68,6 +68,12 @@ color: #251B11;
 font-size: 32px;
 }
 
+.mobilnav-link{
+	font-family:"Playfair Display";
+	color: #251B11;
+	font-size: 24px;
+	padding-bottom: 32px;
+}
 
 
 .nav-item:hover{
@@ -109,13 +115,16 @@ font-size: 32px;
 		display: none;
 	}
 }
-/*--------------*/
+/*----------------------------------------------------*/
 
 
-/* Mobil logo */
+
+
+/* ----------------Mobil logo---------------- */
 .topbilledemobil{
 	padding-top: 19px;
 	padding-bottom: 8px;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	background-color: #D9D3C1;
@@ -123,7 +132,7 @@ font-size: 32px;
 }
 
 .topbilledemobil hr{
-	margin-top: 10px;
+	margin-top: 40px;
 }
 
 @include media-breakpoint-up(lg){
@@ -134,9 +143,12 @@ font-size: 32px;
 		display: none;
 	}
 }
+/*----------------------------------------------------*/
 
 
-/* desktop logo */
+
+
+/*------------- desktop logo -----------*/
 .topbillede{
 	padding-top: 41px;
 	padding-bottom: 23px;
@@ -162,8 +174,101 @@ font-size: 32px;
 		display: none;
 	}
 }
+/*----------------------------------------------------*/
 
-/*udforsk katergorier*/
+
+/*-----------------------------afsnit 1 billede med text------------------------*/
+
+.lpafsnit1{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.abc{
+	position: absolute;
+	
+}
+
+.lpha1{
+	padding: 24px 16px;
+	background-color: #fbf6f255;
+	text-align: center;
+	border-radius: 8px;
+	font-family: "Playfair Display";
+	font-size: 64px;
+	
+	
+}
+.lpha2{
+	padding: 24px 16px;
+	background-color: #fbf6f255;
+	text-align: center;
+	border-radius: 8px;
+	font-family: "Open Sans";
+	font-size: 32px;
+}
+
+.lpafsnit1 img{
+	z-index: -1;
+}
+/*----------------------------------------------------*/
+
+/*-----------------------------afsnit 2 havemøbler------------------------*/
+
+.card-body{
+	background-color: #EBE4D0;
+}
+.produkt{
+	display: flex;
+	flex-direction: row;
+	
+
+	.card-title{
+		font-family: "Playfair Display";
+		font-weight: 500;
+		font-size: 24px;
+	}
+	.ting{
+			font-family: "Playfair Display";
+			font-weight: 400;
+			font-size: 20px;
+			padding: 4px;
+			margin-bottom: 0;
+			margin-left: 5px;
+	}
+
+}
+
+.pris{
+	font-family: "Playfair Display";
+	font-weight: 500;
+	font-size: 24px;	
+}
+.card-text{
+	font-family: "Open Sans";
+	font-size: 16px;
+}
+
+.ratings{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr ;
+
+}
+
+@include media-breakpoint-up(lg){
+    .ratings{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+/*--------------udforsk katergorier--------------*/
 
 .udforskbilleder{
 	display: grid;
@@ -197,5 +302,158 @@ font-size: 32px;
 @include media-breakpoint-up(lg){
 	.empty{
 		display: block;
+	}
+}
+/*----------------------------------------------------*/
+
+
+
+
+/*-------------- mobil footer----------*/
+.mobilfooter {
+
+    background-color: #D9D3C1;
+    padding: 16px;
+    color: #251B11;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .mtop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .ms {
+
+            .Mh {
+                margin-top: 8px;
+                margin-bottom: 4px;
+                font-family: "Playfair Display";
+                font-size: 16px;
+            }
+
+            .mobilikoner {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 16px;
+
+            }
+
+            .Mcopy {
+                font-family: "Open Sans";
+                font-size: 8px;
+            }
+        }
+
+
+    }
+
+    .mbottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .mt {
+
+            .Mh {
+                margin-bottom: 8px;
+                font-family: "Playfair Display";
+                font-size: 16px;
+            }
+
+            .mliste {
+                box-sizing: content-box;
+            }
+
+            .Ml {
+                font-family: "Open Sans";
+                font-size: 8px;
+                text-decoration: none;
+                color: #251B11;
+            }
+        }
+    }
+
+}
+
+/*----------------------------------------------------*/
+
+
+
+
+/*-----------------desktopfooter----------------*/
+
+.desktopfooter {
+
+    background-color: #D9D3C1;
+    padding: 39px 39px;
+    color: #251B11;
+    text-decoration: none;
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+
+    .dh {
+        margin-top: 8px;
+        margin-bottom: 4px;
+        font-family: "Playfair Display";
+        font-size: 16px;
+    }
+
+    .desktopikoner {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 16px;
+
+    }
+
+    .dcopy {
+        font-family: "Open Sans";
+        font-size: 8px;
+    }
+
+    .dh {
+        margin-bottom: 8px;
+        font-family: "Playfair Display";
+        font-size: 16px;
+    }
+
+    .dl {
+        font-family: "Open Sans";
+        font-size: 8px;
+        text-decoration: none;
+        color: #251B11;
+    }
+
+
+}
+
+@include media-breakpoint-up(md) {
+    .mobilfooter {
+        display: none;
+    }
+
+    .desktopfooter {
+        display: flex;
+    }
+}
+
+/*----------------------------------------------------*/
+
+.udforsk-produkt{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	
+	.udforsk-produkt img{
+		width: 100%;
 	}
 }
