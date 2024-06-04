@@ -111,7 +111,10 @@ body{
 .nav-link{
 font-family: "Playfair Display";
 color: #251B11;
+}
 
+.nav-item:hover{
+	text-decoration: none;
 }
 .card{
 	padding-top: 1.5rem;
@@ -135,7 +138,5 @@ color: #251B11;
 	}
 }
 
-.nav-link:hover{
-	text-decoration: underline;
-}
+
 
