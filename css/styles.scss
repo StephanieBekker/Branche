@@ -50,7 +50,7 @@ body{
 	background-color: #FBF6F2;
 }
 
-
+/* navbar */
 .dropdown-item{
 	font-family: Playfair Display;
 	color: #251B11;
@@ -65,17 +65,35 @@ body{
 .nav-link{
 font-family: "Playfair Display";
 color: #251B11;
+font-size: 32px;
 }
+
+
 
 .nav-item:hover{
 	text-decoration: none;
 }
+
+.lpafsnit1{
+	width: 100%;
+}
+
+.lpafsnit1 img{
+	width: 100%;
+}
+
 .card{
 	padding-top: 1.5rem;
 }
 
 .row{
-	margin: 88px;
+	margin: 16px;
+}
+
+@include media-breakpoint-up(lg){
+	.row{
+		margin: 88px;
+	}
 }
 .mobilenav{
 	display: flex;
@@ -91,6 +109,93 @@ color: #251B11;
 		display: none;
 	}
 }
+/*--------------*/
 
 
+/* Mobil logo */
+.topbilledemobil{
+	padding-top: 19px;
+	padding-bottom: 8px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: #D9D3C1;
+	
+}
 
+.topbilledemobil hr{
+	margin-top: 10px;
+}
+
+@include media-breakpoint-up(lg){
+	.topbilledemobil{
+		display: flex;
+	}
+	.topbillede{
+		display: none;
+	}
+}
+
+
+/* desktop logo */
+.topbillede{
+	padding-top: 41px;
+	padding-bottom: 23px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: #D9D3C1;
+	display: none;
+}
+
+.topbillede img{
+	width: 100%;
+}
+
+.topbillede hr{
+	margin-top: 50px;
+}
+
+@include media-breakpoint-up(lg){
+	.topbillede{
+		display: flex;
+	}
+	.topbilledemobil{
+		display: none;
+	}
+}
+
+/*udforsk katergorier*/
+
+.udforskbilleder{
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr 3fr;
+	margin: 16px;
+	column-gap: 20px;
+}
+.udforskbilleder img{
+	width: 100%;
+}
+
+.udforsk{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.udforsk img{
+	width: 100%;
+}
+
+@include media-breakpoint-up(lg){
+	.udforskbilleder{
+		grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+		margin: 88px;
+	}
+}
+.empty{
+	display: none;
+}
+@include media-breakpoint-up(lg){
+	.empty{
+		display: block;
+	}
+}
